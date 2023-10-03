@@ -5,7 +5,6 @@ import { ComponentType, useState, useTransition } from "react";
 import { setFavourite } from "../app/gallery/actions";
 import { SearchResults } from "../app/gallery/page";
 import { FilledHeart } from "@/components/icons/filledheart";
-import { DropdownMenu } from "./ui/dropdown-menu";
 import { ImageMenu } from "./image-menu";
 
 export default function CloudinaryImage(props : {

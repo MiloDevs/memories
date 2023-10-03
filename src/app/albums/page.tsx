@@ -6,12 +6,12 @@ export type Folder = {
   path: string
 };
 
-export default async function AlbumsPage() {
-  const {folders} = (await cloudinary.v2.api.root_folders()) as {
-    folders: Folder[];
-  }
+export const {folders} = (await cloudinary.v2.api.root_folders()) as {
+  folders: Folder[];
+}
 
-  
+export default async function AlbumsPage() {
+
   console.log(folders);
 
   return (
